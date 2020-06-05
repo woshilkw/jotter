@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  outline: auto 0;
+}
+button:focus {
+  outline: auto 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f5f5f5;
+}
+.todoapp .hidden {
+  display: none;
+}
+.todoapp .show {
+  display: block;
+}
+.todoapp {
+  width: 550px;
+  margin: 0 auto;
+}
+.todoapp .header {
+  position: relative;
+}
+.todoapp .header h1 {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 100;
+  color: #e9d7d7;
+  margin-bottom: 1px;
+}
+.todoapp .header input {
+  width: 550px;
+  height: 65px;
+  font-size: 24px;
+  padding: 16px 16px 16px 60px;
+  border: none;
+}
+.todoapp .header ul {
+  position: absolute;
+  list-style: none;
+  z-index: 1;
+}
+.todoapp .header ul li {
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  color: black;
+  background-color: #ddd;
+  border-bottom: 1px solid black;
+}
+.todoapp .header .allcheck {
+  width: 60px;
+  height: 34px;
+  position: absolute;
+  top: 155px;
+  transform: rotate(90deg);
+  color: black;
+  font-size: 22px;
+  padding: 10px 27px 10px 27px;
+}
+.todoapp .header .lab {
+  width: 60px;
+  height: 34px;
+  position: absolute;
+  top: 155px;
+  transform: rotate(90deg);
+  color: #e6e6e6;
+  font-size: 22px;
+  padding: 10px 27px 10px 27px;
+}
+.todoapp .main {
+  border-top: 1px solid #e6e6e6;
+  line-height: 60px;
+  position: relative;
+}
+.todoapp .main .todo-list li:hover .destroy {
+  display: block;
+}
+.todoapp .main .todo-list li {
+  height: 60px;
+}
+.todoapp .main .todo-list li .toggle {
+  width: 20px;
+  height: 20px;
+  margin-top: 24px;
+  left: 15px;
+  position: absolute;
+}
+.todoapp .main .todo-list li .completed {
+  color: #ddd;
+  text-decoration: line-through;
+}
+.todoapp .main .todo-list li label {
+  width: 550px;
+  height: 60px;
+  display: block;
+  padding: 15px 15px 15px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  line-height: 35px;
+}
+.todoapp .main .todo-list li .middle input {
+  width: 550px;
+  height: 60px;
+  padding: 5px 5px 5px 60px;
+  font-size: 18px;
+  background-color: #ffffff;
+  line-height: 35px;
+  border: none;
+}
+.todoapp .main .todo-list li .destroy {
+  width: 20px;
+  height: 20px;
+  margin-left: 500px;
+  margin-top: -55px;
+  display: none;
+}
+.todoapp .footer {
+  height: 50px;
+  background-color: #fff;
+  color: #999999;
+  font-size: 14px;
+  display: flex;
+}
+.todoapp .footer span {
+  flex: 4;
+  line-height: 50px;
+  margin-left: 20px;
+}
+.todoapp .footer .filters {
+  display: flex;
+  line-height: 50px;
+  flex: 6;
+}
+.todoapp .footer .filters .active {
+  border: 1px solid #ddd;
+}
+.todoapp .footer .filters li {
+  margin-right: 30px;
+}
+.todoapp .footer .filters li a {
+  color: #999999;
+}
+.todoapp .footer .div {
+  line-height: 50px;
+  margin-right: 10px;
+  border: none;
+  color: #999999;
+  background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.todoapp input::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+.todoapp input::-moz-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
+.todoapp input::input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #e6e6e6;
+}
